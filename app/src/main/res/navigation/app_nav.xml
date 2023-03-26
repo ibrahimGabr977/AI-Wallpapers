@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.hope.igb.aiwallpapers.screen.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_displayFragment"
+            app:destination="@id/displayFragment"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.hope.igb.aiwallpapers.screen.favorite.FavoriteFragment"
+        android:label="FavoriteFragment" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.hope.igb.aiwallpapers.screen.display.DisplayFragment"
+        android:label="DisplayFragment" >
+
+
+        <argument
+            android:name="wallpaperUrls"
+            app:argType="string"
+            android:defaultValue=""
+             />
+        <argument
+            android:name="wallpaperUsages"
+            app:argType="string"
+            android:defaultValue=""
+             />
+    </fragment>
+</navigation>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "914485351495",
+    "firebase_url": "https://ai-wallpapers-8797f-default-rtdb.firebaseio.com",
+    "project_id": "ai-wallpapers-8797f",
+    "storage_bucket": "ai-wallpapers-8797f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914485351495:android:543f210515d9bda064cd62",
+        "android_client_info": {
+          "package_name": "com.hope.igb.aiwallpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914485351495-t4ah7ghpb11aodtlqm5562uk772ptl13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf1JFjFNY-64CLQTmbqNs89uOntdCodcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914485351495-t4ah7ghpb11aodtlqm5562uk772ptl13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C000000"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progress_window_background"
+        android:paddingVertical="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/settingOriginalWallpaper"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:background="@drawable/select_wallpaper_background"
+            android:contentDescription="@string/content_description_original_wallpaper"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/settingCroppedWallpaper"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/setting_original_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/settingOriginalWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/settingOriginalWallpaper"
+            app:layout_constraintTop_toBottomOf="@id/settingOriginalWallpaper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="@string/portrait"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="9dp"/>
+
+
+        <View
+            android:id="@+id/selectSetOriginalWallpaper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/select_wallpaper_background"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/settingOriginalWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/settingOriginalWallpaper"
+            app:layout_constraintStart_toStartOf="@id/settingOriginalWallpaper"
+            app:layout_constraintTop_toTopOf="@id/settingOriginalWallpaper"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/settingCroppedWallpaper"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:contentDescription="@string/content_description_cropped_wallpaper"
+            android:scaleType="fitXY"
+            android:background="@drawable/select_wallpaper_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/settingOriginalWallpaper"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <View
+            android:id="@+id/selectSetCroppedWallpaper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/select_wallpaper_background"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/settingCroppedWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/settingCroppedWallpaper"
+            app:layout_constraintStart_toStartOf="@id/settingCroppedWallpaper"
+            app:layout_constraintTop_toTopOf="@id/settingCroppedWallpaper"
+            />
+
+        <TextView
+            android:id="@+id/setting_cropped_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/settingCroppedWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/settingCroppedWallpaper"
+            app:layout_constraintTop_toBottomOf="@id/settingCroppedWallpaper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="@string/landscape"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="9dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

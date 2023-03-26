@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">AI Wallpapers</string>
+
+    <string name="tag_all">All</string>
+    <string name="tag_cars">Cars</string>
+    <string name="tag_nature">Nature</string>
+    <string name="tag_scifi">Sci-fi</string>
+    <string name="tag_architectural">Architectural</string>
+    <string name="tag_others">Others</string>
+
+
+
+    <string name="image">Image</string>
+    <string name="content_description_no_internet">No internet connection</string>
+    <string name="whoops">Whoops!</string>
+    <string name="problem_on_your_network">There seems to be a problem with your Network Connection</string>
+    <string name="try_again">Try Again</string>
+    <string name="recent">Recent</string>
+    <string name="content_description_favorite_list">Favorite List</string>
+    <string name="favorites">Favorites</string>
+    <string name="content_description_back">Back to home screen</string>
+    <string name="no_favorites">No favorite wallpapers to show!</string>
+    <string name="content_description_add_favorite">Add wallpaper to favorites</string>
+    <string name="content_description_menu">Open wallpaper options</string>
+    <string name="download">Download</string>
+    <string name="set_wallpaper">Set wallpaper</string>
+    <string name="set_lockscreen">Set LockScreen</string>
+    <string name="set_both">Set both</string>
+    <string name="close">Close</string>
+    <string name="content_description_display_wallpaper">Display wallpaper</string>
+    <string name="content_description_original_wallpaper">Select original wallpaper</string>
+    <string name="content_description_cropped_wallpaper">Select cropped wallpaper</string>
+    <string name="donwloading">Downloading....</string>
+    <string name="cancel">Cancel</string>
+    <string name="popular">Popular</string>
+    <string name="portrait">Portrait</string>
+    <string name="landscape">Landscape</string>
+
+
+
+<!--    <string name="banner_ad_id1">ca-app-pub-6313249792432665/5706755692</string>-->
+<!--    <string name="banner_ad_id2">ca-app-pub-6313249792432665/5360955547</string>-->
+<!--    <string name="interstitial_ad_id1">ca-app-pub-6313249792432665/3856302182</string>-->
+
+
+    <string name="banner_ad_id1">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_id2">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="interstitial_ad_id1">ca-app-pub-3940256099942544/1033173712</string>
+
+
+
+</resources>

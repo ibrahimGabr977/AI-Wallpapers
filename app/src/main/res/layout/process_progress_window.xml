@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C000000"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progress_window_background"
+        android:paddingVertical="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.85">
+
+
+        <ImageView
+            android:id="@+id/originalWallpaper"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:contentDescription="@string/content_description_original_wallpaper"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/croppedWallpaper"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:background="@drawable/select_wallpaper_background"
+           />
+
+
+        <TextView
+            android:id="@+id/process_original_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/originalWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/originalWallpaper"
+            app:layout_constraintTop_toBottomOf="@id/originalWallpaper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="@string/portrait"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="9dp"/>
+
+        <View
+            android:id="@+id/selectOriginalWallpaper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/select_wallpaper_background"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/originalWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/originalWallpaper"
+            app:layout_constraintStart_toStartOf="@id/originalWallpaper"
+            app:layout_constraintTop_toTopOf="@id/originalWallpaper"
+            />
+
+        <ImageView
+            android:id="@+id/croppedWallpaper"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:contentDescription="@string/content_description_cropped_wallpaper"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/originalWallpaper"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/select_wallpaper_background"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/process_cropped_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/croppedWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/croppedWallpaper"
+            app:layout_constraintTop_toBottomOf="@id/croppedWallpaper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="@string/landscape"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="9dp"
+            android:visibility="visible"/>
+
+
+        <View
+            android:id="@+id/selectCroppedWallpaper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/select_wallpaper_background"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/croppedWallpaper"
+            app:layout_constraintEnd_toEndOf="@id/croppedWallpaper"
+            app:layout_constraintStart_toStartOf="@id/croppedWallpaper"
+            app:layout_constraintTop_toTopOf="@id/croppedWallpaper"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/donwloading"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/process_original_text"
+            app:layout_constraintVertical_bias="0" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressBar"
+            style="@style/Widget.Material3.CircularProgressIndicator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:indicatorColor="#5498EC"
+            app:layout_constraintBottom_toBottomOf="@id/progress"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/progress"
+            app:layout_constraintStart_toStartOf="@id/progress"
+            app:layout_constraintTop_toTopOf="@id/progress"
+            app:trackColor="@color/gray_color"
+            app:trackThickness="3dp" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif-monospace"
+            android:padding="19dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/process"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/close_process_window"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/close_process_windowbg"
+            android:gravity="center"
+            android:paddingVertical="3dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent="0.27" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

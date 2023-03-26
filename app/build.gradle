@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.hope.igb.aiwallpapers'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.hope.igb.aiwallpapers"
+        minSdk 21
+        targetSdk 33
+        versionCode 8
+        versionName "1.2.4"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+//        coreLibraryDesugaringEnabled true
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+//    //noinspection GradleDependency
+//    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.2'
+
+    // Java language implementation
+    implementation "androidx.navigation:navigation-fragment:2.5.3"
+    implementation "androidx.navigation:navigation-ui:2.5.3"
+
+    // Feature module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:2.5.3"
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
+
+    implementation 'com.github.MikeOrtiz:TouchImageView:1.4.1'
+
+
+
+
+
+}
