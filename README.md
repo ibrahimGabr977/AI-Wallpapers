@@ -1,5 +1,7 @@
 # AI-Wallpapers
 
+The application designed with MVC design pattern.
+
 Application on Google Play: https://play.google.com/store/apps/details?id=com.hope.igb.aiwallpapers
 
 
